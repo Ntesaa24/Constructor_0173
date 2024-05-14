@@ -24,3 +24,9 @@ void mahasiswa::setID() {
 	id = ++nim; 
 }
 
+void mahasiswa::setID() {
+	cout << "ID = " << id << endl; 
+	cout << "Nama = " << nama << endl;
+	cout << endl;
+}
+
