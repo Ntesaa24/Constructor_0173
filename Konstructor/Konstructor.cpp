@@ -15,18 +15,15 @@ public:
 		nim = iNim;
 	}
 
-	mahasiswa(string); 
-	mahasiswa(int iNim, string iNama); 
+	mahasiswa(string iNama) {
+		nim = 0;
+		nama = iNama;
+	}
+	mahasiswa(int iNim, string iNama) {
+		nim = iNim;
+		nama = iNama;
+	}
 	void cetak();
 };
 
-mahasiswa::mahasiswa(string iNama) {
-	nim = 0;
-	nama = iNama; 
-}
-
-mahasiswa::mahasiswa(int iNim, string iNama) {
-	nim = iNim; 
-	nama = iNama; 
-}
 
