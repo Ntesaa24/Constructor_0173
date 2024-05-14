@@ -10,7 +10,7 @@ public:
 	string nama; 
 
 	void setID(); 
-	void printall(); 
+	void printAll(); 
 
 	static void setNim(int pNim) { nim = pNim; /*Definisi Function*/ }
 	static int getNim() { return nim; /*Definisi Function*/ }
@@ -24,7 +24,7 @@ void mahasiswa::setID() {
 	id = ++nim; 
 }
 
-void mahasiswa::printall() {
+void mahasiswa::printAll() {
 	cout << "ID = " << id << endl; 
 	cout << "Nama = " << endl; 
 	cout << endl; 
@@ -36,4 +36,12 @@ int main() {
 	mahasiswa::setNim(9); //mengakses nim melalui static member function "setNim"
 	mahasiswa mhs3("andi Janu"); 
 	mahasiswa mhs4("Joko Wahono"); 
+
+	mhs1.printAll();
+	mhs2.printAll(); 
+	mhs3.printAll(); 
+	mhs4.printAll(); 
+
+	cout << "akses dari luar object = " << mahasiswa::getNim() << endl;  // mengakses nim
+	system("pause"); 
 }
