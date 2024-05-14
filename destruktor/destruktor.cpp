@@ -7,4 +7,7 @@ private:
 	int panjang; 
 public:
 	angka(int); //Constructor
+	~angka(); //Destuctor 
+	void cetakData(); 
+	void isiData(); 
 };
