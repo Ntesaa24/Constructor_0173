@@ -42,4 +42,12 @@ int main() {
 	mahasiswa mhs3("Sayang"); 
 	mahasiswa mhs4(30, "jaddu"); 
 
+	mhs1.cetak(); 
+	mhs2.cetak();
+	mhs3.cetak();
+	mhs4.cetak(); 
+	system("pause"); 
+	return 0; 
+
+
 }
