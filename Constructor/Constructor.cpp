@@ -2,16 +2,24 @@
 #include <string>
 using namespace std; 
 
-class mahasiswa {
+class Mahasiswa {
 	static int nim; 
 	int id; 
 	string nama; 
 
-	void set(); 
+	void setID(); 
 	void printAll(); 
 
-	mahasiswa(string pnama) :nama(pnama) {
+	Mahasiswa(string pnama) :nama(pnama) {
 		setID(); 
 	}
 };
 
+
+int Mahasiswa::nim = 173;
+
+void Mahasiswa::printAll() {
+	cout << "ID = " << id << endl; 
+	cout << "Nama = " << nama << endl; 
+	cout << endl; 
+}
