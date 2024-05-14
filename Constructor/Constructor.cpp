@@ -36,4 +36,8 @@ int main() {
 	mhs3.printAll();
 	mhs4.printAll(); 
 
+	system("pause"); 
+
+	return 0; 
+
 }
