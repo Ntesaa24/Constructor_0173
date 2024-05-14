@@ -14,6 +14,13 @@ public:
 //Definisi member Function 
 angka::angka(int i) { //Constructor 
 	panjang = i;
-	arr = newint[i]; 
+	arr = new int[i]; 
 	isiData(); 
+}
+
+angka::~angka() { //Destuctor
+	cout << endl; 
+	cetakData();
+	delete[]arr; 
+	cout << "Alamat Array Sudah Dilepaskan" << endl; 
 }
