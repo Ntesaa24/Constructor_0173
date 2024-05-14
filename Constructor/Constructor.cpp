@@ -32,6 +32,7 @@ void Mahasiswa::printAll() {
 int main() {
 	Mahasiswa mhs1("Lia Kurnia"); 
 	Mahasiswa mhs2("Asroni"); 
+	mhs2.nim = 20;
 	Mahasiswa mhs3("Andi Kurniawan"); 
 	Mahasiswa mhs4("Joko Purbo");
 
@@ -43,5 +44,4 @@ int main() {
 	system("pause"); 
 
 	return 0; 
-
 }
